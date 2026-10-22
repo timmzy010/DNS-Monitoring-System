@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Monitoring System</title>
+
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+    <div class="container">
+        <h1>DNS Monitoring System</h1>
+
+        <p class="description">
+            Enter a domain name to check its DNS status.
+        </p>
+
+        <div class="monitor-box">
+            <label for="domainInput">Domain Name</label>
+
+            <input
+                type="text"
+                id="domainInput"
+                placeholder="Example: google.com"
+            >
+
+            <button id="checkButton">Check Domain</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="result-box">
+            <h2>Monitoring Result</h2>
+
+            <div class="result-row">
+                <strong>Domain:</strong>
+                <span id="resultDomain">---</span>
+            </div>
+
+            <div class="result-row">
+                <strong>Status:</strong>
+                <span id="resultStatus">---</span>
+            </div>
+
+            <div class="result-row">
+                <strong>IP Address:</strong>
+                <span id="resultIp">---</span>
+            </div>
+
+            <div class="result-row">
+                <strong>Response Time:</strong>
+                <span id="resultTime">---</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="interaction.js"></script>
+</body>
+</html>
